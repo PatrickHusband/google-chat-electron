@@ -1,5 +1,4 @@
 import {Menu, app, shell, clipboard, BrowserWindow, dialog} from 'electron';
-import {checkForUpdates} from 'electron-update-notifier';
 import path from 'path';
 import {openNewGitHubIssue, debugInfo} from 'electron-util';
 import log from 'electron-log';
@@ -208,15 +207,6 @@ export default (window: BrowserWindow) => {
             setImmediate(() => {
               shell.openExternal(pkg.homepage)
             })
-          }
-        },
-        {
-          label: 'Check For Updates',
-          enabled: true,
-          click: () => {
-            checkForUpdates({
-              silent: false,
-            });
           }
         },
         {
