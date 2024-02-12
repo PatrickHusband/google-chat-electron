@@ -1,6 +1,6 @@
 {
   "name": "google-chat-electron",
-  "version": "2.21.0",
+  "version": "2.30.0",
   "description": "Unofficial desktop app for Google Chat.",
   "private": true,
   "repository": "https://github.com/PatrickHusband/google-chat-electron",
@@ -10,7 +10,7 @@
   "main": "lib/main/index.js",
   "scripts": {
     "prestart": "npm run ts",
-    "start": "electron .",
+    "start": "ELECTRON_ENABLE_LOGGING=1 electron .",
     "clean:dist": "rimraf ./dist",
     "clean:lib": "rimraf ./lib",
     "prets": "npm run clean:lib",
@@ -33,17 +33,20 @@
     "@types/throttle-debounce": "^5.0.2",
     "electron": "^28.1.0",
     "electron-packager": "^17.1.1",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.4.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/is-online": "^8.1.0",
     "auto-launch": "^5.0.6",
     "electron-context-menu": "^3.6.1",
     "electron-log": "^4.4.8",
     "electron-store": "^8.1.0",
     "electron-unhandled": "^4.0.1",
+    "electron-update-notifier": "^1.7.0",
     "electron-util": "^0.17.2",
-    "is-online": "^9.0.1",
+    "is-online": "^10.0.0",
+    "public-ip": "^6.0.1",
     "throttle-debounce": "^5.0.0"
   },
   "optionalDependencies": {
