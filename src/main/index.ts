@@ -6,7 +6,6 @@ import {enforceSingleInstance, restoreFirstInstance} from './features/singleInst
 import environment from "../environment";
 import enableContextMenu from './features/contextMenu';
 import runAtLogin from './features/openAtLogin';
-import updateNotifier from './features/appUpdates';
 import setupTrayIcon from './features/trayIcon';
 import keepWindowState from './features/windowState';
 import externalLinks from './features/externalLinks';
@@ -41,7 +40,6 @@ if (enforceSingleInstance()) {
       restoreFirstInstance(mainWindow);
       keepWindowState(mainWindow);
       runAtLogin(mainWindow);
-      updateNotifier();
       enableContextMenu();
       badgeIcons(mainWindow, trayIcon);
       closeToTray(mainWindow);
