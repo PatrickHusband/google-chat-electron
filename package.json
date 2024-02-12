@@ -5,7 +5,7 @@
   "private": true,
   "repository": "https://github.com/PatrickHusband/google-chat-electron",
   "homepage": "https://github.com/PatrickHusband/google-chat-electron",
-  "author": "ankurk91",
+  "author": "PatrickHusband",
   "license": "GNU GPLv3",
   "main": "lib/main/index.js",
   "scripts": {
